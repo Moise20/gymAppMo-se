@@ -1,0 +1,8 @@
+<div class="card">
+    <img *ngIf="img" [src]="img" [alt]="title">
+    <div class="pad">
+      <h3 *ngIf="title">{{title}}</h3>
+      <p *ngIf="desc" class="muted">{{desc}}</p>
+      <ng-content></ng-content>
+    </div>
+  </div>
