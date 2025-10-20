@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { ProgramList } from './program-list/program-list';
 
 @Component({
   selector: 'app-programs',
-  imports: [],
+  imports: [ProgramList],
+  standalone: true,
   templateUrl: './programs.html',
   styleUrl: './programs.css'
 })
