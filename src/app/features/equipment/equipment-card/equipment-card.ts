@@ -9,5 +9,5 @@ export interface Equipment { title:string; img:string; }
   styleUrl: './equipment-card.css'
 })
 export class EquipmentCard {
-@Input() item?: Equipment;
+ @Input({ required: true }) item!: Equipment; 
 }

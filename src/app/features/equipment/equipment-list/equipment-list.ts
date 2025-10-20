@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { EquipmentCard } from '../equipment-card/equipment-card';
+import { Equipment, EquipmentCard } from '../equipment-card/equipment-card';
 import { NgFor } from '@angular/common';
+
 
 @Component({
   selector: 'app-equipment-list',
