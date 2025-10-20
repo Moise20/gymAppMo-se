@@ -1,0 +1,18 @@
+<form [formGroup]="f" (ngSubmit)="submit()" class="form">
+  <h2 class="h2" style="text-align:center">Section Contact</h2>
+
+  <label>Prénom</label>
+  <input type="text" formControlName="firstname"/>
+  <small *ngIf="f.get('firstname')?.touched && f.get('firstname')?.invalid">Obligatoire</small>
+
+  <label>Nom</label>
+  <input type="text" formControlName="lastname"/>
+  <small *ngIf="f.get('lastname')?.touched && f.get('lastname')?.invalid">Obligatoire</small>
+
+  <label>Message</label>
+  <textarea rows="6" formControlName="message"></textarea>
+  <small *ngIf="f.get('message')?.touched && f.get('message')?.invalid">10 caractères minimum</small>
+
+  <app-button type="submit" label="Envoyer"></app-button>
+  <p *ngIf="sent" class="ok">Merci, votre message a bien été envoyé.</p>
+</form>

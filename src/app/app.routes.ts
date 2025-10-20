@@ -6,27 +6,27 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () =>
-      import('./features/home/home.component').then(m => m.HomeComponent)
+      import('./features/home/home').then(m => m.Home)
   },
   {
     path: 'programs',
     loadComponent: () =>
-      import('./features/programs/programs.component').then(m => m.ProgramsComponent)
+      import('./features/programs/programs').then(m => m.Programs)
   },
   {
     path: 'equipment',
     loadComponent: () =>
-      import('./features/equipment/equipment.component').then(m => m.EquipmentComponent)
+      import('./features/equipment/equipment').then(m => m.Equipment)
   },
   {
     path: 'pricing',
     loadComponent: () =>
-      import('./features/pricing/pricing.component').then(m => m.PricingComponent)
+      import('./features/pricing/pricing').then(m => m.Pricing)
   },
   {
     path: 'contact',
     loadComponent: () =>
-      import('./features/contact/contact.component').then(m => m.ContactComponent)
+      import('./features/contact/contact').then(m => m.Contact)
   },
 
   { path: '**', redirectTo: 'home' }
