@@ -1,0 +1,11 @@
+<div class="pcard">
+    <h3>{{plan?.name}}</h3>
+    <div class="price">{{plan?.price}}<span>€</span><small>/mois</small></div>
+    <ul class="pros">
+      <li *ngFor="let f of plan?.features">✔ {{f}}</li>
+    </ul>
+    <ul class="cons" *ngIf="plan?.negatives?.length">
+      <li *ngFor="let n of plan?.negatives">✖ {{n}}</li>
+    </ul>
+    <app-button label="Choisir"></app-button>
+  </div>

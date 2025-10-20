@@ -1,0 +1,11 @@
+.pcard{
+  background: radial-gradient(1200px 500px at 20% -20%, #151515, #0e0e0e);
+  border:1px solid #1e1e1e; border-radius:20px; padding:28px; text-align:center;
+  box-shadow:var(--shadow); min-width:280px
+}
+.price{font-size:56px; font-weight:800; margin:8px 0 16px}
+.price span{font-size:.6em; opacity:.8}
+.price small{font-size:.4em; color:var(--muted)}
+ul{list-style:none; padding:0; margin:0 0 12px}
+.pros li{color:#74d680}
+.cons li{color:#ff6b6b}

@@ -1,0 +1,8 @@
+<section class="section" style="background:#101010">
+    <div class="container">
+      <h2 class="h2" style="text-align:center">TARIFS</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit,minmax(280px,1fr));">
+        <app-pricing-card *ngFor="let p of plans" [plan]="p"></app-pricing-card>
+      </div>
+    </div>
+  </section>
