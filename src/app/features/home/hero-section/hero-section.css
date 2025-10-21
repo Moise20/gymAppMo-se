@@ -2,7 +2,7 @@
   position:relative; min-height:72vh; display:flex; align-items:center;
   background:
     radial-gradient(ellipse at 60% 50%, rgba(0,0,0,.3) 0%, rgba(0,0,0,.95) 60%),
-    url('/assets/hero.jpg') center/cover no-repeat fixed;
+    url('/assets/hero.png') center/cover no-repeat fixed;
 }
 
 .hero-inner{padding:72px 0}
