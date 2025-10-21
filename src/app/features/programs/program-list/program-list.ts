@@ -11,8 +11,8 @@ import { Program, ProgramCard } from '../program-card/program-card';
 })
 export class ProgramList {
 programs: Program[] = [
-    { id:1, title:'Salle libre', desc:'Accès illimité au plateau', img:'/assets/prog1.png' },
-    { id:2, title:'CrossFit', desc:'WOD & coaching', img:'/assets/prog2.png' },
-    { id:3, title:'Cardio/HIIT', desc:'Sessions intenses', img:'/assets/prog3.png' },
+    { id:1, title:'Salle libre', desc:'Accès illimité au plateau', img:'assets/prog1.png' },
+    { id:2, title:'CrossFit', desc:'WOD & coaching', img:'assets/prog2.png' },
+    { id:3, title:'Cardio/HIIT', desc:'Sessions intenses', img:'assets/prog3.png' },
   ];
 }
