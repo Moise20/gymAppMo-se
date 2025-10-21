@@ -12,11 +12,11 @@ import { NgFor } from '@angular/common';
 })
 export class EquipmentList {
 data: Equipment[] = [
-    { title:'Haltères & racks', img:'/assets/eq1.jpg' },
-    { title:'Cardio & vélos', img:'/assets/eq2.jpg' },
-    { title:'Machines guidées', img:'/assets/eq3.jpg' },
-    { title:'Box CrossFit', img:'/assets/eq4.jpg' },
-    { title:'Zone stretching', img:'/assets/eq5.jpg' },
-    { title:'Poids libres', img:'/assets/eq6.jpg' },
+    { title:'Haltères & racks', img:'/assets/eq1.png' },
+    { title:'Cardio & vélos', img:'/assets/eq2.png' },
+    { title:'Machines guidées', img:'/assets/eq3.png' },
+    { title:'Box CrossFit', img:'/assets/eq4.png' },
+    { title:'Zone stretching', img:'/assets/eq5.png' },
+    { title:'Poids libres', img:'/assets/eq6.png' },
   ];
 }
