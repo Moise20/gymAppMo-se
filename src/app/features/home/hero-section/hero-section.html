@@ -1,8 +1,11 @@
-<section class="hero">
+<section
+  class="hero"
+  [style.background-image]="'radial-gradient(ellipse at 60% 50%, rgba(0,0,0,.3) 0%, rgba(0,0,0,.95) 60%), url(' + heroImage + ')'"
+>
   <div class="container hero-inner">
     <div class="copy">
       <h1 class="h1">GYM PANAS</h1>
-      <p class="lead">Dépassez vos limites.<br/>Entraînez-vous.<br/>Progressez.</p>
+      <p class="lead">Dépassez vos limites.<br />Entraînez-vous.<br />Progressez.</p>
       <div class="actions">
         <a routerLink="/equipment"><app-button label="Équipement"></app-button></a>
         <a routerLink="/contact"><app-button label="Contact"></app-button></a>
