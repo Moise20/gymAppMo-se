@@ -1,59 +1,77 @@
-# GymApp
+# 🏋️‍♂️ Gym PANAS – Application Angular 20 Standalone
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+> Une application moderne et responsive de salle de sport, développée avec **Angular 20 (architecture standalone)**, et déployée automatiquement via **Netlify CI/CD** depuis GitHub.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Aperçu
+
+🔗 **Démo en ligne :** [https://gym-panas.netlify.app](https://gym-panas.netlify.app)  
+🧠 **Code source GitHub :** [https://github.com/Moise20/gymAppMo-se](https://github.com/Moise20/gymAppMo-se)
+
+---
+
+## 🧩 Objectifs du projet
+
+- Créer un site vitrine pour une salle de sport avec une interface moderne et fluide  
+- Présenter les programmes, équipements, tarifs et un formulaire de contact  
+- Utiliser les **nouvelles pratiques Angular (standalone components)**  
+- Mettre en place une **intégration continue (CI/CD)** avec **Netlify**
+
+---
+
+## 🏗️ Architecture du projet
+
+src/
+├── app/
+│ ├── features/
+│ │ ├── home/
+│ │ ├── programs/
+│ │ ├── equipment/
+│ │ ├── pricing/
+│ │ └── contact/
+│ └── shared/
+│ └── ui/
+│ ├── navbar/
+│ ├── footer/
+│ ├── card/
+│ └── button/
+├── assets/
+│ ├── intro1.jpg
+│ ├── intro2.jpg
+│ ├── intro3.jpg
+│ ├── prog1.jpg
+│ ├── prog2.jpg
+│ ├── prog3.jpg
+│ ├── eq1.jpg … eq6.jpg
+│ └── gym-panas-icon.png
+└── index.html
+
+
+---
+
+## 🧰 Stack Technique
+
+| Technologie | Version | Description |
+|--------------|----------|--------------|
+| Angular | 20.3.6 | Framework principal |
+| Node.js | 22.20.0 | Environnement JS |
+| TypeScript | 5.9.3 | Langage |
+| RxJS | 7.8.2 | Gestion des flux |
+| Netlify | - | Déploiement automatique |
+
+---
+
+## ⚙️ Installation locale
+
+Clone le dépôt :
 
 ```bash
-ng serve
-```
+git clone https://github.com/Moise20/gymAppMo-se
+cd gym-app
+npm install
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Lancer l’application localement :
+ng serve -o
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Le site s’ouvre sur http://localhost:4200
