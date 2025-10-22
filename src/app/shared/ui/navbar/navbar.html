@@ -2,24 +2,24 @@
   <div class="container row">
     <a class="brand" routerLink="/home">GYM PANAS</a>
 
-    <!-- Bouton burger (mobile only) -->
-    <button class="burger" (click)="toggleMenu()">
-      <span [class.open]="menuOpen"></span>
-      <span [class.open]="menuOpen"></span>
-      <span [class.open]="menuOpen"></span>
-    </button>
-
-    <!-- Liens (version desktop) -->
+    <!-- menu desktop -->
     <nav class="links desktop">
-      <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">ACCUEIL</a>
-      <a routerLink="/equipment" routerLinkActive="active" (click)="closeMenu()">MATÉRIEL</a>
-      <a routerLink="/pricing" routerLinkActive="active" (click)="closeMenu()">TARIFS</a>
-      <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">CONTACT</a>
+      <a routerLink="/home" routerLinkActive="active">ACCUEIL</a>
+      <a routerLink="/equipment" routerLinkActive="active">MATÉRIEL</a>
+      <a routerLink="/pricing" routerLinkActive="active">TARIFS</a>
+      <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
     </nav>
+
+    <!-- bouton burger -->
+    <button class="burger" (click)="toggleMenu()">
+      <span [class.open]="isOpen"></span>
+      <span [class.open]="isOpen"></span>
+      <span [class.open]="isOpen"></span>
+    </button>
   </div>
 
-  <!-- Menu mobile -->
-  <nav class="links mobile" *ngIf="menuOpen">
+  <!-- menu mobile latéral -->
+  <nav class="links mobile" *ngIf="isOpen">
     <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">ACCUEIL</a>
     <a routerLink="/equipment" routerLinkActive="active" (click)="closeMenu()">MATÉRIEL</a>
     <a routerLink="/pricing" routerLinkActive="active" (click)="closeMenu()">TARIFS</a>

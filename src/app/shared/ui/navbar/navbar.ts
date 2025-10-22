@@ -9,13 +9,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './navbar.css'
 })
 export class Navbar {
-menuOpen = false;
+isOpen = false;
 
   toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+    this.isOpen = !this.isOpen;
   }
 
   closeMenu() {
-    this.menuOpen = false;
+    this.isOpen = false;
   }
 }

@@ -1,4 +1,4 @@
-/* src/app/shared/ui/navbar/navbar.css */
+
 .nav {
   position: sticky;
   top: 0;
@@ -83,45 +83,42 @@
   }
 
   .links.mobile {
-    position: absolute; /* ✅ important pour s’afficher par-dessus */
-    top: 64px; /* sous la navbar */
-    left: 0;
-    width: 100%;
+    position: fixed;              /* ✅ fixée sur l’écran */
+    top: 0;
+    right: 0;                     /* ✅ bande à droite */
+    height: 100vh;                /* pleine hauteur */
+    width: 70%;                   /* largeur du panneau */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: rgba(0, 0, 0, 0.95);
-    padding: 1rem 0;
+    gap: 1.5rem;
     text-align: center;
-    border-top: 1px solid #1f1f1f;
-    z-index: 1500; /* 🔼 au-dessus du contenu */
-    animation: slideDown 0.3s ease-out;
+    z-index: 1500;
+    animation: slideIn 0.3s ease-out;
   }
 
   .links.mobile a {
-  color: #f5f5f5;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease;
-}
-.links.mobile a:hover {
-  color: var(--primary);
-  transform: scale(1.03);
-}
-
-
-  .links.mobile a:last-child {
-    border-bottom: none;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
   }
 
-  /* Animation fluide */
-  @keyframes slideDown {
+  .links.mobile a:hover {
+    color: var(--primary);
+    transform: scale(1.05);
+  }
+
+  @keyframes slideIn {
     from {
+      transform: translateX(100%);
       opacity: 0;
-      transform: translateY(-10px);
     }
     to {
+      transform: translateX(0);
       opacity: 1;
-      transform: translateY(0);
     }
   }
 }
