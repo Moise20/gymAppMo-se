@@ -1,6 +1,100 @@
-.nav{position:sticky; top:0; z-index:50; background:rgba(0,0,0,.7); backdrop-filter: blur(6px); border-bottom:1px solid #1f1f1f}
-.row{display:flex; align-items:center; justify-content:space-between; height:64px}
-.brand{font-weight:700; letter-spacing:.5px}
-.links{display:flex; gap:24px; font-weight:600}
-.links a{opacity:.9}
-.links a.active, .links a:hover{color:var(--primary); opacity:1}
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+  font-weight: 600;
+}
+
+.links a {
+  color: white;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.links a.active,
+.links a:hover {
+  color: var(--primary);
+  opacity: 1;
+}
+
+/* ============ BURGER BUTTON ============ */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Animation du burger */
+.burger span.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.burger span.open:nth-child(2) {
+  opacity: 0;
+}
+.burger span.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ============ MOBILE STYLES ============ */
+@media (max-width: 768px) {
+  .links.desktop {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .links.mobile {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #1f1f1f;
+  }
+
+  .links.mobile a {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .links.mobile a:last-child {
+    border-bottom: none;
+  }
+}
